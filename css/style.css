@@ -2,20 +2,22 @@
 2021-09-22  */
 
 body 
-  {
+  {  position: relative;
+
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f8f9+0,e5ebee+50,d7dee3+51,f5f7f9+100;White+Gloss */
 background: rgb(246,248,249); /* Old browsers */
 background: -moz-linear-gradient(-45deg,  rgba(246,248,249,1) 0%, rgba(229,235,238,1) 50%, rgba(215,222,227,1) 51%, rgba(245,247,249,1) 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(-45deg,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg,  rgba(246,248,249,1) 0%,rgba(229,235,238,1) 50%,rgba(215,222,227,1) 51%,rgba(245,247,249,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', endColorstr='#f5f7f9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    z-index: 100;
 
     width:100%;
     margin:0 auto;
     padding:0;
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
   }
+
 
   .firststycke img
    {
@@ -346,7 +348,8 @@ background-color:white;
 
 
 .startpage {
-
+  z-index: 0;
+  position: relative;
   padding-bottom: 130px;
   padding-top: 130px;
   /* top: 140px; */
@@ -370,6 +373,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f8f9', end
 
 main
      {
+      
       padding-bottom: 130px;
       padding-top: 130px;
       /* top: 140px; */
@@ -591,18 +595,20 @@ main
 
 
     .fixed_backgroundImg {
-
+      background-repeat: no-repeat;
       background:url(../images/bluewater-sweden-7fgMeID38TY-unsplash.jpg);
       background-size:cover;
       height:400px;
       width:100%;
-      background-attachment: fixed;
+      background-attachment:fixed;
+      background-position: 0 44px;
+      overflow:scroll;
 
 
     }
 
-    .firststycke, .firststycke {
-
+    .firststycke {
+position: relative;
 width:60%;
 margin: 0 auto;
 
